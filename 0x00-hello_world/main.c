@@ -7,5 +7,6 @@
  */
 int main(void)
 {
+	printf("preprocessing. \n");
 	return (0);
 }
