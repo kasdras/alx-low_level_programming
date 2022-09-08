@@ -7,6 +7,6 @@
  */
 int main(void)
 {
-	printf("preprocessing. \n");
+	printf("Holberton School");
 	return (0);
 }
