@@ -8,20 +8,16 @@
  */
 int main(void)
 {
-	int alp, m, n, p;
+	int alp, m, n;
 
 	for (alp = 0; alp <= 9; ++alp)
 	{
 		putchar(alp + '0');
-		if (4 > 3)
+		if (alp != 9)
 		{
 			n = ',';
 			putchar(n);
-		}
-		if (4 > 2)
-		{
-			p = ' ';
-			putchar(p);
+			putchar(' ');
 		}
 	}
 
