@@ -1,31 +1,30 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
 
 /**
  * main - print positive and negative numbers
- *
  * Return: Always 0 (Success)
- *
  */
 int main(void)
 {
-	int n, last_digit, digit;
+	int n, l_dgt, dgt;
 
 	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	digit = n;
-	while (digit >= 10)
-		digit = digit % 10;
-	last_digit = digit;
-
-	if (last_digit > 5)
-		printf("Last digit of %d is %d and is greater than 5\n", n, last_digit);
-	else if (last_digit == 0)
-		printf("Last digit of %d is %d and is 0\n", n, last_digit);
-	else
-		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, last_digit);
+	dgt = n = rand() - RAND_MAX / 2;
+	while ((dgt >= 10) || (dgt < 0))
+	{
+		dgt = dgt % 10;
+		if ((dgt - 5) != 0)
+			break;
+	}
+	l_dgt = dgt;
+	if (l_dgt > 5)
+		printf("Last digit of %d is %d and is greater than 5\n", n, l_dgt);
+	else if (l_dgt == 0)
+		printf("Last digit of %d is %d and is 0\n", n, l_dgt);
+	else if ((l_dgt < 6) || (l_dgt < 0))
+		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, l_dgt);
 
 	return (0);
 }
