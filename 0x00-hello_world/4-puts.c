@@ -1,18 +1,13 @@
 #include <stdio.h>
 
-/*
- * Initialize a character or string data type
+/**
+ * main - Entry point
  *
- * the puts() function prints the string
- * and the puts() comes with a new line
- *
+ * Return: A string
  */
-
-int main()
+int main(void)
 {
-	char my_str[] = "Programming is like building a multilingual puzzle";
+	char my_str[] = "\"Programming is like building a multilingual puzzle\"";
 	puts(my_str);
-	return(0);
+	return (0);
 }
-
-
