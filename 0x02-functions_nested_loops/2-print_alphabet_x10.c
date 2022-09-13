@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * print_alphabet - calls the putchar ()
+ * print_alphabet_x10 - calls the putchar ()
  * print_alphabet - prints the alphabets a - z
  *
  * Return: Always 0 Success
