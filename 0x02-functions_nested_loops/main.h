@@ -1,16 +1,13 @@
-#include <stdio.h>
-int _putchar(void);
+#ifndef main_h
+#define main_h
 
-int _putchar(void)
-{
-	putchar('_');
-	putchar('p');
-	putchar('u');
-	putchar('t');
-	putchar('c');
-	putchar('h');
-	putchar('a');
-	putchar('r');
-	putchar('\n');
-	return 1;
-}
+#include <stdio.h>
+
+
+int _putchar(char c);
+void print_alphabet(void);
+void print_alphabet_x10(void);
+int _islover(int c);
+int _isalpha(int c);
+
+#endif /*main_h*/
