@@ -15,5 +15,7 @@ int _islower(int c) /* c - is a value*/
 		return (1);
 	else if (c >= 'A' && c <= 'Z')
 		return (0);
+	else
+		return (0);
 	return (1);
 }
