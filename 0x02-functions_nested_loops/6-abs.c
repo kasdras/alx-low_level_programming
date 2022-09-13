@@ -5,14 +5,12 @@
  * _abs - checks for alphabetic character
  *
  * int: it is a sign
- * @int: it is a value
+ * @p: it is a value
  *
  * Return: Always 0 Success
  */
-int _abs(int)
+int _abs(int p)
 {
-	int p;
-
 	if (p < 0)
 	{
 		p = (-1) * p;
