@@ -11,9 +11,12 @@
  */
 int _islower(int c) /* c - is a value*/
 {
-	if (c >= 'a' && c <= 'z')
+	int p;
+	p = c;
+
+	if (p >= 'a' && p <= 'z')
 		return (1);
-	else if (c >= 'A' && c <= 'Z')
+	else if (p >= 'A' && p <= 'Z')
 		return (0);
 	return (1);
 }
