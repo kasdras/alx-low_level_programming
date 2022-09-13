@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * main - calls the putchar ()
+ * print_alphabet - calls the putchar ()
  * print_alphabet - prints the alphabets a - z
  *
  * Return: Always 0 Success
@@ -14,6 +14,6 @@ void print_alphabet(void)
 	for (i = 'a'; i <= 'z'; ++i)
 	{
 		_putchar(i);
-		_putchar('\n');
 	}
+	_putchar('\n');
 }
