@@ -10,6 +10,6 @@ int main(void)
 
 	for (m = 0; m < 1024; m++)
 		if (m % 3 == 0 || m % 5 == 0)
-			p += m;
-	printf("%d\n", p);
-	return(0);
+			n += m;
+	printf("%d\n", n);
+	return (0);
