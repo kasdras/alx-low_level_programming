@@ -15,9 +15,9 @@ int print_last_digit(int p)
 	int m;
 
 	m = -1;
-	if ((p < 0) || (p == INT_MIN))
+	if ((p < 0) || (p == INT_MIN)i)
 		p = p * m;
-	while (p >= 10)
+	while (p > 10)
 		p = p % 10;
 	return (p);
 }
