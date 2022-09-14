@@ -10,7 +10,7 @@
  *
  * Return: Always 0 Success
  */
-int print_last_digit(int p)
+int print_last_digit(signed p)
 {
 	if (p < 0)
 		p = p * (-1);
