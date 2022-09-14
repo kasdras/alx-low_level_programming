@@ -12,9 +12,12 @@
  */
 int print_last_digit(signed p)
 {
+	int m;
+
+	m = -1;
 	if (p < 0)
-		p = p * (-1);
-	while (p > 10)
+		p = p * m;
+	while (p >= 10)
 		p = p % 10;
 	return (p);
 }
