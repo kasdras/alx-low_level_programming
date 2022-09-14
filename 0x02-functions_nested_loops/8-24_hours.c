@@ -20,6 +20,8 @@ void jack_bauer(void)
 			{
 				for (p = 0; p <= 9; p++)
 				{
+					if ((m == 2) && (n == 3))
+						break;
 					_putchar(m + '0');
 					_putchar(n + '0');
 					_putchar(':');
@@ -29,7 +31,5 @@ void jack_bauer(void)
 				}
 			}
 		}
-		if ((m == 2) && (n == 3) && (o == 5) && (p == 9))
-			break;
 	}
 }
