@@ -10,12 +10,12 @@
  *
  * Return: Always 0 Success
  */
-int print_last_digit(signed p)
+int print_last_digit(int p)
 {
 	int m;
 
 	m = -1;
-	if (p < 0)
+	if ((p < 0) || (p == INT_MIN))
 		p = p * m;
 	while (p >= 10)
 		p = p % 10;
