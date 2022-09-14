@@ -13,16 +13,10 @@ int print_last_digit(int p)
 {
 	int f;
 
+	f = p;
 	if (p < 0)
-	{
 		p = (-1) * p;
-		while (p > 10)
-		{
-			p = p % 10;
-		}
-		f = p;
-		return (p);
-		return (f);
-	}
-	return (1);
+	while (p > 10)
+		p = p % 10;
+	return (p, f);
 }
