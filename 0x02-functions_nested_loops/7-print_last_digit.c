@@ -12,10 +12,16 @@
  */
 int print_last_digit(int p)
 {
-	if (0 > p || p == INT_MIN)
-		p = (-1) * p;
+	int m;
+
+	if ((p > 0) || (p == print_last_digit(INT_MIN)))
+	{
+		m = -1;
+		p = m * p;
+	}
 	while (p > 10)
 		p = p % 10;
-	_putchar(p + '0');
-	_putchar(p + '0');
+	_putchar('0' + p);
+	_putchar('0' + p);
+	_putchar('\n');
 }
