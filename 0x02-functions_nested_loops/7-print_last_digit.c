@@ -23,5 +23,6 @@ int print_last_digit(int p)
 		f = p;
 		return (p);
 		return (f);
+	}
 	return (1);
 }
