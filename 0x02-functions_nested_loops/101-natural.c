@@ -13,3 +13,4 @@ int main(void)
 			n += m;
 	printf("%d\n", n);
 	return (0);
+}
