@@ -10,10 +10,7 @@
  * Return: Always 0 Success
  */
 int print_last_digit(int p)
-{
-	int f, m;
 
-	f = p;
 	if (p < 0)
 		p = (-1) * p;
 	while (p > 10)
