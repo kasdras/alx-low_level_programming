@@ -11,7 +11,7 @@
  */
 int print_last_digit(int p)
 {
-	if (0 > p)
+	if (0 > p || p == INT_MIN)
 		p = (-1) * p;
 	while (p > 10)
 		p = p % 10;
