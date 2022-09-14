@@ -21,8 +21,7 @@ int print_last_digit(int p)
 		while (p > 10)
 			p = p % 10;
 	}
-	_putchar(p + '0');
-	_putchar(p + '0');
+	return (_putchar(p));
+	return (_putchar(p));
 	_putchar('\n');
-	return (1);
 }
