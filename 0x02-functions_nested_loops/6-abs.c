@@ -12,10 +12,8 @@
 int _abs(int p)
 {
 	if (p < 0)
-	{
-		p = (-1) * p;
-	}
+		return (p * (-1));
 	else if (p >= 0)
-		p = 1 * p;
+		return ((1) * p);
 	return (1);
 }
