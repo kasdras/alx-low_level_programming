@@ -15,5 +15,5 @@ int print_last_digit(int p)
 		p = (-1) * p;
 	while (p > 10)
 		p = p % 10;
-	return (1);
+	return (p);
 }
