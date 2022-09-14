@@ -18,9 +18,9 @@ int print_last_digit(int p)
 	{
 		m = -1;
 		p = m * p;
+		while (p > 10)
+			p = p % 10;
 	}
-	while (p > 10)
-		p = p % 10;
 	_putchar(p + '0');
 	_putchar(p + '0');
 	_putchar('\n');
