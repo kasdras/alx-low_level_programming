@@ -12,12 +12,10 @@
  */
 int print_last_digit(int p)
 {
-	if (p ^ 2 > 0)
-	{
-		while (p > 10)
-			p = p % 10;
-		_putchar(p);
-		_putchar(p);
-	}
+	p = (-1) * p;
+	while (p > 10)
+		p = p % 10;
+	_putchar(p);
+	_putchar(p);
 	return (print_last_digit(p));
 }
