@@ -12,7 +12,7 @@
  */
 int print_last_digit(int p)
 {
-	if (p ** 2 > 0)
+	if (p ^ 2 > 0)
 	{
 		while (p > 10)
 			p = p % 10;
