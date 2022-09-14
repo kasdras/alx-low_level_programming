@@ -27,9 +27,9 @@ void jack_bauer(void)
 					_putchar(p + '0');
 					_putchar('\n');
 				}
+				if ((m == 2) && (n == 4))
+					break;
 			}
-			if ((m == 2) && (n == 4))
-				break;
 		}
 	}
 }
