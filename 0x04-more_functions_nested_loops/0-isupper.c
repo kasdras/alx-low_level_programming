@@ -9,15 +9,9 @@
 
 int _isupper(int c)
 {
-	int i;
-
-	i = 0;
 	if (c >= 'a' && c <= 'z')
-		_putchar(i + '0');
+		return (0);
 	else
-	{
-		i = 1;
-		_putchar(i + '0');
-	}
-	return (i);
+		return (1);
+	return (1);
 }
