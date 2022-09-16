@@ -8,7 +8,7 @@
  * Return: 0
  */
 
-void print_number(int n);
+void print_number(int n)
 {
-	return (_putchar(n + '0'));
+	_putchar(n + '0');
 }
