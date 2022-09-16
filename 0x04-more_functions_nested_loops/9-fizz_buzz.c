@@ -4,7 +4,7 @@
 /**
  * main - print 1 - 100 with multiples of three and five
  * having fizz Buzz
- * 
+ *
  * Return: 0
  */
 
@@ -31,5 +31,6 @@ int main(void)
 		}
 		printf("%d ", i);
 	}
+	printf("\n");
 	return (0);
 }
