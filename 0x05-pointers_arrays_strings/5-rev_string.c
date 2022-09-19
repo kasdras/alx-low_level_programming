@@ -15,10 +15,9 @@ void rev_string(char *s)
 		i++;
 	i -= 1;
 	p = 0;
-	while (i >= 0)
+	while (i >= 0i)
 	{
 		*(s + p) = *(s + i);
 		p++;
-		i--;
 	}
 }
