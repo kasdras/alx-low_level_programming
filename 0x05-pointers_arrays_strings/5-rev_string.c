@@ -19,5 +19,6 @@ void rev_string(char *s)
 	{
 		*(s + p) = *(s + i);
 		p++;
+		--i;
 	}
 }
