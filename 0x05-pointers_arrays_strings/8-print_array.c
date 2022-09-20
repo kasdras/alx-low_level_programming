@@ -18,11 +18,11 @@ void print_array(int *a, int n)
 		if (i < n)
 		{
 			printf("%d", a[i]);
-			_putchar(',');
+			putchar(',');
 		}
 		if (i != n - 1)
-			_putchar(' ');
+			putchar(' ');
 		i++;
 	}
-	_putchar('\n');
+	putchar('\n');
 }
