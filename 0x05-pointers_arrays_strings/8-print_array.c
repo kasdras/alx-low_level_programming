@@ -15,7 +15,7 @@ void print_array(int *a, int n)
 	i = 0;
 	while (i < n)
 	{
-		_putchar(*(a + i) + '0');
+		printf("%p[i]", *a);
 		_putchar(',');
 		i++;
 		if (i != n - 1)
