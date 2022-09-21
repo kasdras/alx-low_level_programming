@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * _strcmp - compares two strings
+ * _strcmp - function compares two strings
  * @s1: first string
  * @s2: second string
- * Return: <-15, 0, >15
+ * Return: 15 or -15 or 0
  */
 
 int _strcmp(char *s1, char *s2)
@@ -12,11 +12,13 @@ int _strcmp(char *s1, char *s2)
 	int i;
 
 	i = 0;
-	while ((*s1 != '\0' && *s2 != '\0') && *s1 == *s2)
+	while ((s1[i] != '\0') || (s2[i] != '\0'))
 	{
-		s1++;
-		s2++;
+		if (s1[i] > s2[i])
+			return (15);
+		if (s1[i] < s2[i])
+			return (-15);
+		i++;
 	}
-	i = (*s1 == *s2) ? 0 : (*s1 > *s2) ? 15 : -15;
-	return (i);
+	return (0);
 }
