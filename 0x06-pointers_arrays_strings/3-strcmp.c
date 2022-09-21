@@ -7,7 +7,7 @@
  * Return: <-15, 0, >15
  */
 
-char _strcmp(char *s1, char *s2)
+int _strcmp(char *s1, char *s2)
 {
 	int i;
 
