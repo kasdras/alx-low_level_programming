@@ -17,6 +17,6 @@ char _strcmp(char *s1, char *s2)
 		s1++;
 		s2++;
 	}
-	i = (*s1 == *s2)? 0: (*s1 > *s2)? 15: -15;
-	return i;
+	i = (*s1 == *s2) ? 0 : (*s1 > *s2) ? 15 : -15;
+	return (i);
 }
