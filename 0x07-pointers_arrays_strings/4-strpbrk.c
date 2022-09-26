@@ -6,7 +6,6 @@
  * @accept: accepted characters
  * Return: the string since the first found accepted character
  */
-
 char *_strpbrk(char *s, char *accept)
 {
 	int i = 0, j;
@@ -19,7 +18,7 @@ char *_strpbrk(char *s, char *accept)
 		{
 			if (s[i] == accept[j])
 			{
-				s += a;
+				s += i;
 				return (s);
 			}
 			j++;
