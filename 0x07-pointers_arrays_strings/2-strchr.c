@@ -10,18 +10,17 @@
 char *_strchr(char *s, char c)
 {
 	unsigned int i, j;
-	char *p;
 
 	i = 0;
 	while (s[i] != '\0')
 		i++;
-	for (j = 0; i < i; j++)
+	for (j = 0; i <= i; j++)
 	{
-		if (s[j] == c)
+		if (c == s[j])
 		{
-			p = s[j];
-			break;
+			s += b;
+			return (s);
 		}
 	}
-	return (p);
+	return ('\0');
 }
