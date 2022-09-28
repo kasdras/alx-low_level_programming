@@ -9,13 +9,14 @@
 
 void _puts_recursion(char *s)
 {
-	int i, char *p;
+	int i;
+	char p;
 
 	i = 0;
 	while (*(s + i) != '\0')
 	{
-		*p = s[i];
-		_putchar(_puts_recursion(*p));
+		p = s[i];
+		_putchar(_puts_recursion(p));
 		i++;
 	}
 	_putchar('\n');
