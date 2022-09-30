@@ -4,10 +4,10 @@
 /**
  * main - prints the first command line argument
  * @argc: The number of command line argument
- * argv: the array of command line argument
- * Return: O Always 
+ * @argv: the array of command line argument
+ * Return: O Always
  */
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
 	printf("%s\n", argv[argc - 1]);
 	return (0);
