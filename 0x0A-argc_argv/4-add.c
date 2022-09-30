@@ -10,7 +10,7 @@
  */
 int main(int argc, char *argv[])
 {
-	unsigned long int i, j;
+	int i, j;
 
 	j = 0;
 	for (i = 1; i < argc; i++)
@@ -25,6 +25,6 @@ int main(int argc, char *argv[])
 			j += atoi(argv[i]);
 		}
 	}
-	printf("%ld\n", j);
+	printf("%d\n", j);
 	return (0);
 }
