@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 {
 	int (*oprt)(int, int);
 
-	if (argv != 4)
+	if (argc != 4)
 	{
 		printf("Error\n");
 		exit(98);
@@ -27,6 +27,6 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 
-	printf("%d\n", oprt(atoi(argv[i]), atoi(argv[3])));
+	printf("%d\n", oprt(atoi(argv[1]), atoi(argv[3])));
 	return (0);
 }
