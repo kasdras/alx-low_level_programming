@@ -2,7 +2,8 @@
 #include <stdlib.h>
 #include <string.h>
 
-/** get_op_func - returns the result of the operator
+/**
+ * get_op_func - returns the result of the operator
  * @s: ...
  *
  * Return: ...
