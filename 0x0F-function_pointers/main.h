@@ -1,5 +1,5 @@
-#ifndef _MAIN.H_
-#define _MAIN.H_
+#ifndef MAIN.H
+#define MAIN.H
 
 void print_name(char *name, void (*f)(char *));
 
