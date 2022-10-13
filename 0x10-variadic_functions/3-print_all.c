@@ -11,87 +11,45 @@
 void print_all(const char * const format, ...)
 {
 	va_list args;
-	f_dt form_types[] = {
-		{ "c", print_a_char },
-		{ "i", print_a_integer},
-		{ "f", print_a_float },
-		{ "s", print_a_char_ptr }
-	};
-	unsigned int i = 0;
-	unsigned int j = 0;
-	chr *separator = "";
+	unsigned int count = 0, j, i = 0;
+	char *p;
+	const char arguments[] = "cifs";
 
 	va_start(args, format);
-
-	while (format != NULL && format[i])
+	while (format && format[count])
 	{
 		j = 0;
-		while (j < 4)
+		while (arguments[j])
 		{
-			if (format[i] == *form_types[j].identifier)
+			if (format[count] == arguments[j] && i)
 			{
-				form_types[j].f(separator, args);
-				separator = ", ";
-			}
-			j++;
+				printf(", ");
+				break;
+			} j++;
 		}
-		i++;
+		switch (format[count])
+		{
+			case 'c':
+				printf("%c", va_arg(args, int)), i = 1;
+				break;
+			case 'i':
+				printf("%d", va_arg(args, int)), i = 1;
+				break;
+			case 'f':
+				printf("%f", va_arg(args, double)), i = 1;
+				break;
+			case 's':
+				p = va_arg(args, char *), i = 1;
+				if (!p)
+				{
+					printf("(nil)");
+					break;
+				}
+				printf("%s", p);
+				break;
+		}
+		count++;
 	}
-	va_end(args);
 	printf("\n");
-}
-
-/**
- * print_a_char - prints a character
- * @separator: the separator
- * @args: the argument list
- *
- * Return: Nothing
- */
-void print_a_char(char *separator, va_list args)
-{
-	printf("%s%c", separator, va_arg(args, int));
-}
-
-/**
- * print_a_integer - prints integer type
- * @separator: the separator
- * @args: the list of arguments
- *
- * Return: Nothing
- */
-void print_a_integer(char *separator, va_list args)
-{
-	printf("%s%i", separator, va_arg(args, int));
-}
-
-/**
- * print_a_float - print float format
- * @separator: the separator
- * @args: the argument list
- *
- * Return: Nothing
- */
-void print_a_float(char *separator, va_list args)
-{
-	printf("%s%f", separator, va_arg(args, double));
-}
-
-/**
- * print_a_char_ptr - prints the content of pointers to char
- * @separator: the separator
- * @args: the argument list
- *
- * Return: Nothin
- */
-void print_a_char_ptr(char *separator, va_list args)
-{
-	char *arg = va_arg(args, char *);
-
-	if (arg == NULL)
-	{
-		printf("%s%s", separator, "(nil)");
-		return;
-	}
-	printf("%s%s", separator, arg);
+	va_end(args);
 }
