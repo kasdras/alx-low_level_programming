@@ -24,10 +24,15 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		va_start(args, n);
 		for (i = 0; i < n; i++)
 		{
-			_putchar(va_arg(args, int) + '0');
-			_putchar(b);
-			_putchar(' ');
+			if (i == n - 1)
+			{
+				printf("%d\n", va_arg(args, int));
+			}
+			else
+			{
+				printf("%d%c ", va_arg(args, int), b);
+			}
 		}
-		_putchar('\n');
+		va_end(args);
 	}
 }
