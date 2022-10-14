@@ -48,9 +48,7 @@ void print_all(const char * const format, ...)
 				}
 				printf("%s", p);
 				break;
-		}
-		count++;
+		} count++;
 	}
-	printf("\n");
-	va_end(args);
+	printf("\n"), va_end(args);
 }
