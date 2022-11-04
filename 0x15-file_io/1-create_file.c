@@ -1,6 +1,6 @@
 #include "main.h"
 
-/*
+/**
  * create_file - create a file with permssion
  * @filename: A pointer to the name of the file
  * @text_content: the pointer to a string to write
